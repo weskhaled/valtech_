@@ -1,0 +1,116 @@
+[
+  {
+    "isPrimary": true,
+    "name": "Front-End",
+    "logoUrl": "/images/logo.svg",
+    "country": "Valtech_",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nihil adipisci nobis recusandae blanditiis cum.",
+    "imageUrl": "https://images.unsplash.com/photo-1554147090-e1221a04a025?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D"
+  },
+  {
+    "isPrimary": false,
+    "name": "Venice",
+    "country": "Italy",
+    "description": "Venice, the capital of northern Italy’s Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea.",
+    "imageUrl": "https://images.unsplash.com/photo-1531279308503-f2d8062d1a27?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3"
+  },
+  {
+    "isPrimary": false,
+    "name": "Berlin",
+    "country": "Germany",
+    "description": "Berlin, Germany’s capital and cultural center, dates to the 13th century. Divided during the Cold War, today it's known for its art scene.",
+    "imageUrl": "https://images.unsplash.com/photo-1585405327087-ccddc9329fa5?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxM"
+  },
+  {
+    "isPrimary": false,
+    "name": "Barcelona",
+    "country": "Spain",
+    "description": "Barcelona, the cosmopolitan capital of Spain’s Catalonia region, is known for its art and architecture.",
+    "imageUrl": "https://images.unsplash.com/photo-1558642084-fd07fae5282e?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3"
+  },
+  {
+    "isPrimary": false,
+    "name": "Paris",
+    "country": "France",
+    "description": "Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture.",
+    "imageUrl": "https://images.unsplash.com/photo-1492136344046-866c85e0bf04?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid="
+
+  },
+  {
+    "isPrimary": false,
+    "name": "Amesterdam",
+    "country": "Netherlands",
+    "description": "Amsterdam is the Netherlands’ capital, known for its artistic heritage, elaborate canal system and narrow houses with gabled facades.",
+    "imageUrl": "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid="
+  },
+  {
+    "isPrimary": false,
+    "name": "London",
+    "country": "United Kingdom",
+    "description": "London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times.",
+    "imageUrl": "https://images.unsplash.com/photo-1561022107-23ba5b910e02?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid="
+  },
+  {
+    "isPrimary": false,
+    "name": "New York",
+    "country": "United States",
+    "description": "New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan.",
+    "imageUrl": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid="
+  },
+  {
+    "isPrimary": false,
+    "name": "Tokyo",
+    "country": "Japan",
+    "description": "Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples.",
+    "imageUrl": "https://images.unsplash.com/photo-1533050487297-09b450131914?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid="
+  },
+  {
+    "isPrimary": false,
+    "name": "Rio de Janeiro",
+    "country": "Brazil",
+    "description": "Rio de Janeiro is a huge seaside city in Brazil, famed for its Copacabana and Ipanema beaches.",
+    "imageUrl": "https://images.unsplash.com/photo-1490644658840-3f2e3f8c5625?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid="
+  },
+  {
+    "isPrimary": false,
+    "name": "Tunis",
+    "country": "Tunisia",
+    "description": "Tunis is the sprawling capital of Tunisia, a country in North Africa. It sits along Lake Tunis, just inland from the Mediterranean Sea’s Gulf of Tunis.",
+    "imageUrl": "https://images.unsplash.com/photo-1674763689252-86104367889a?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid="
+  },
+  {
+    "isPrimary": false,
+    "name": "Brussels",
+    "country": "Belgium",
+    "description": "Brussels, officially the Brussels-Capital Region, is a region of Belgium comprising 19 municipalities, including the City of Brussels, which is the capital of Belgium.",
+    "imageUrl": "https://images.unsplash.com/photo-1626013969117-8c13864fdb2d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid="
+  },
+  {
+    "isPrimary": false,
+    "name": "Beijing",
+    "country": "China",
+    "description": "Beijing, China’s sprawling capital, has history stretching back 3 millennia.",
+    "imageUrl": "https://images.unsplash.com/photo-1510332981392-36692ea3a195?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid="
+  },
+  {
+    "isPrimary": false,
+    "name": "New Delhi",
+    "country": "India",
+    "description": "New Delhi is an urban district located in the city of Delhi. New Delhi serves as the capital of India and the seat of all three branches of the Government of India.",
+    "imageUrl": "https://images.unsplash.com/photo-1515091943-9d5c0ad475af?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid="
+  },
+  {
+    "isPrimary": false,
+    "name": "Cairo",
+    "country": "Egypt",
+    "description": "Cairo, Egypt’s sprawling capital, is set on the Nile River. At its heart is Tahrir Square and the vast Egyptian Museum, a trove of antiquities including royal mummies and gilded King Tutankhamun artifacts.",
+    "imageUrl": "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid="
+  },
+  {
+    "isPrimary": false,
+    "name": "Australia",
+    "country": "Canberra",
+    "description": "Canberra is the capital city of Australia. Founded following the federation of the colonies of Australia as the seat of government for the new nation.",
+    "imageUrl": "https://images.unsplash.com/photo-1512036849132-48508f294900?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  }
+]
