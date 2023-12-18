@@ -21,25 +21,6 @@ export default defineNuxtConfig({
     'animate.css',
   ],
 
-  nitro: {
-    esbuild: {
-      options: {
-        target: 'esnext',
-        tsconfigRaw: {
-          compilerOptions: {
-            experimentalDecorators: true,
-          },
-        },
-      },
-    },
-
-    prerender: {
-      crawlLinks: false,
-      routes: ['/'],
-      ignore: [],
-    },
-  },
-
   app: {
     head: {
       viewport: 'width=device-width,initial-scale=1',

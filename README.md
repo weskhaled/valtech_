@@ -1,75 +1,35 @@
-# Nuxt 3 Minimal Starter
+# Valtech_ Technical Test
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This project has been crafted with affection using Nuxt.js and deployed on Vercel for demonstration purposes.
 
-## Setup
+## Overview:
+Valtech_ technical Test has served as the inspiration for creating a dynamic Gallery, employing advanced techniques like infinite scroll, virtual scroll, and animations triggered by scrolling.
 
-Make sure to install the dependencies:
+## Libraries used:
+Nuxt.js, VueUse, Animate.css, CSS/Tailwind/UnoCSS/LESS for styling, and for component documentation, Storybook has been employed. For testing, vitest has been utilized.
 
+## Instructions:
+To get started, you'll need Node.js version 18 or higher and a package manager (npm, pnpm, yarn, or bun). Here's the setup process:
+
+- 1: Clone the project
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+git clone https://github.com/weskhaled/valtech_
 ```
+- 2 Copy .env.example to .env and configure your environment variables.
+- 3 Run `pnpm install` to install the dependencies.
 
-## Development Server
+## Commands:
 
-Start the development server on `http://localhost:3000`:
+`pnpm run dev` to launch the development server.
 
-```bash
-# npm
-npm run dev
+`pnpm run storybook` to run Storybook in development mode.
 
-# pnpm
-pnpm run dev
+`pnpm run build-storybook` to generate the static files.
 
-# yarn
-yarn dev
+`pnpm run test` to execute coverage tests using vitest.
 
-# bun
-bun run dev
-```
+`pnpm run build` to build the project, followed by
 
-## Production
+`pnpm run start` to run it in a production environment.
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### Enjoy exploring!

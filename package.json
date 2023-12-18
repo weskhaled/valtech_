@@ -4,18 +4,18 @@
   "private": true,
   "packageManager": "pnpm@8.9.2",
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "generate": "nuxi generate",
-    "preview": "nuxi preview",
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
     "start": "node .output/server/index.mjs",
-    "postinstall": "nuxi prepare",
-    "storybook:dev": "storybook dev --port 6006",
-    "storybook:build": "storybook build",
+    "postinstall": "nuxt prepare",
+    "storybook": "storybook dev --port 6006",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "lint": "eslint .",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "vue-tsc --noEmit",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.4.5",

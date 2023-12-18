@@ -81,10 +81,10 @@ watch(y, (value) => {
       </div>
       <div v-bind="wrapperProps" class="flex flex-col">
         <div
-          v-for="{ index, data } in list" :key="index"
+          v-for="{ index, data: dataItem } in list" :key="index"
           :data-index="index"
           :style="{
-            height: `${data.height}px`,
+            height: `${dataItem.height}px`,
           }"
           class="flex overflow-visible"
           :class="[
@@ -95,7 +95,7 @@ watch(y, (value) => {
         >
           <div class="grid--card">
             <CountryCard
-              v-for="(item, cardIndex) in data.items" :key="(index * 7) + cardIndex + 1"
+              v-for="(item, cardIndex) in dataItem.items" :key="(index * 7) + cardIndex + 1"
               :item="item"
               :tabindex="(index * 7) + cardIndex + 1"
               :class="[item.isPrimary && 'primary', item.isSecondary && 'secondary']"
