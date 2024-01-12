@@ -105,7 +105,7 @@ watch(y, (value) => {
   </div>
 </template>
 
-<style scoped lang="less">
+<style lang="less">
 .grid--card {
   @apply grid md:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6 gap-4 p-2 w-full h-full m-auto overflow-y-hidden rounded;
 

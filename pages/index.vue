@@ -5,15 +5,17 @@ const { data, pending } = useFetch('/api/countries?skip=0')
 </script>
 
 <template>
-  <Loader v-if="pending" />
-  <div class="grid-wrapper">
-    <div class="images-grid">
-      <CountryCard
-        v-for="(item, index) in data" :key="index" :item="item"
-        :class="[item.isPrimary && 'primary', item.isSecondary && 'secondary']"
-        :tabindex="index + 1"
-        @read-more-click="router.push(`/country/${item.country}`)"
-      />
+  <div>
+    <Loader v-if="pending" />
+    <div class="grid-wrapper">
+      <div class="images-grid">
+        <CountryCard
+          v-for="(item, index) in data" :key="index" :item="item"
+          :class="[item.isPrimary && 'primary', item.isSecondary && 'secondary']"
+          :tabindex="index + 1"
+          @read-more-click="router.push(`/country/${item.country}`)"
+        />
+      </div>
     </div>
   </div>
 </template>

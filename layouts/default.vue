@@ -13,5 +13,6 @@
   </div>
 </template>
 
-<style lang="less" scoped>
+<style>
+@import url('~/assets/css/main.css');
 </style>

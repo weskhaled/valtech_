@@ -15,11 +15,11 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetAttributify(),
-    presetExtra(),
     presetIcons({
       scale: 1.2,
     }),
     presetTypography(),
+    presetExtra(),
     presetWebFonts({
       fonts: {
         // these will extend the default theme
