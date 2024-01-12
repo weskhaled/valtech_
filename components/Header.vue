@@ -52,7 +52,7 @@ header {
         align-items: center;
         width: 100%;
         padding: 0 1rem;
-        max-width: 1600px;
+        max-width: 1400px;
 
         >div.header--logo {
             >a {

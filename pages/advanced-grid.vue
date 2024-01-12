@@ -30,13 +30,15 @@ const filteredItems = computed(() => {
     return allData.value
 
   const grouped = []
-  for (let i = 0; i < data.value.length; i += 7) {
-    grouped.push({
-      height: minItemHeight.value,
-      items: data.value.slice(i, i + 7),
-    })
+  if (data.value?.length) {
+    for (let i = 0; i < data.value.length; i += 7) {
+      grouped.push({
+        height: minItemHeight.value,
+        items: data.value.slice(i, i + 7),
+      })
+    }
+    allData.value.push(...grouped)
   }
-  allData.value.push(...grouped)
   return grouped
 })
 
@@ -73,35 +75,30 @@ watch(y, (value) => {
 </script>
 
 <template>
-  <div class="mx-auto h-screen max-w-full flex flex-col overflow-x-hidden">
-    <Header class="sticky top-0 z-3 mx-auto w-full flex items-center justify-center bg-black/65 px-4 text-xl text-dark" />
-    <div v-bind="containerProps" class="relative overflow-x-hidden bg-gray-500/5 !h-[calc(100%-3.5rem)]">
-      <div v-if="pending" class="fixed z-2 h-full w-full flex items-center justify-center bg-black/20">
-        <span class="i-line-md-loading-twotone-loop h-8 w-8" />
-      </div>
-      <div v-bind="wrapperProps" class="flex flex-col">
-        <div
-          v-for="{ index, data: dataItem } in list" :key="index"
-          :data-index="index"
-          :style="{
-            height: `${dataItem.height}px`,
-          }"
-          class="flex overflow-visible"
-          :class="[
-            (index === nextItemInViewIndex && lastScrollDirection === 'down') && 'animate__animated',
-            (index > nextItemInViewIndex && lastScrollDirection === 'down') && '!opacity-0',
-            (index < nextItemInViewIndex && lastScrollDirection === 'down' || lastScrollDirection === 'up') && 'animate__animated',
-          ]"
-        >
-          <div class="grid--card">
-            <CountryCard
-              v-for="(item, cardIndex) in dataItem.items" :key="(index * 7) + cardIndex + 1"
-              :item="item"
-              :tabindex="(index * 7) + cardIndex + 1"
-              :class="[item.isPrimary && 'primary', item.isSecondary && 'secondary']"
-              @read-more-click="router.push(`/country/${item.country}`)"
-            />
-          </div>
+  <div v-bind="containerProps" class="relative w-full overflow-x-hidden bg-gray-500/5 !h-[calc(100vh-3.5rem)]">
+    <Loader v-if="pending" />
+    <div v-bind="wrapperProps" class="flex flex-col">
+      <div
+        v-for="{ index, data: dataItem } in list" :key="index"
+        :data-index="index"
+        :style="{
+          height: `${dataItem.height}px`,
+        }"
+        class="flex overflow-visible"
+        :class="[
+          (index === nextItemInViewIndex && lastScrollDirection === 'down') && 'animate__animated',
+          (index > nextItemInViewIndex && lastScrollDirection === 'down') && '!opacity-0',
+          (index < nextItemInViewIndex && lastScrollDirection === 'down' || lastScrollDirection === 'up') && 'animate__animated',
+        ]"
+      >
+        <div class="grid--card">
+          <CountryCard
+            v-for="(item, cardIndex) in dataItem.items" :key="(index * 7) + cardIndex + 1"
+            :item="item"
+            :tabindex="(index * 7) + cardIndex + 1"
+            :class="[item.isPrimary && 'primary', item.isSecondary && 'secondary']"
+            @read-more-click="router.push(`/country/${item.country}`)"
+          />
         </div>
       </div>
     </div>
