@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { mountSuspended } from 'vitest-environment-nuxt/utils'
+import { mountSuspended } from '@nuxt/test-utils/runtime'
 
 import CountryCard from '~/components/CountryCard.vue'
 

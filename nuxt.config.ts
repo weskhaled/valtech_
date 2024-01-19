@@ -4,9 +4,15 @@ import process from 'node:process'
 export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
-    'nuxt-vitest',
-    '@nuxtjs/storybook',
+    '@nuxt/test-utils/module',
+    '@storybook-vue/nuxt-storybook',
   ],
+
+  storybook: {
+    url: 'http://localhost:6006',
+    storybookRoute: '/__storybook__',
+    port: 6006,
+  },
 
   runtimeConfig: {
     public: {
