@@ -11,7 +11,7 @@ async function getAllCountries() {
   if (countries.length > staticCountries.length)
     return countries
 
-  const result = await ofetch(`${API_RESTCOUNTRIES_URL}/v3.1/all`, {
+  const result = await ofetch(`${API_RESTCOUNTRIES_URL}/rest/v2/all`, {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
@@ -22,8 +22,10 @@ async function getAllCountries() {
 
   return countries
 }
+
 export async function getCountries(skip = 0) {
-  await getAllCountries()
+  // Disabled get countries from API
+  // await getAllCountries()
 
   const from = skip
   const to = skip + 21
@@ -52,15 +54,15 @@ export async function getCountries(skip = 0) {
   return Array.from({ length: 21 }, (_, index) => ({
     isPrimary: index === 0 || index === 7 || index === 14,
     isSecondary: index === 1 || index === 6 || index === 8 || index === 13 || index === 17 || index === 18,
-    name: ResultCountries[index].name,
-    logoUrl: ResultCountries[index].logoUrl,
-    country: ResultCountries[index].country,
-    description: ResultCountries[index].description,
-    imageUrl: ResultCountries[index].imageUrl || (resultImages ? resultImages[index].imageUrl : ''),
-    alt: resultImages ? resultImages[index].alt : '',
+    name: ResultCountries[index]?.name,
+    logoUrl: ResultCountries[index]?.logoUrl,
+    country: ResultCountries[index]?.country,
+    description: ResultCountries[index]?.description,
+    imageUrl: ResultCountries[index]?.imageUrl || (resultImages ? resultImages[index]?.imageUrl : ''),
+    alt: resultImages ? resultImages[index]?.alt : '',
     extras: {
-      flag: ResultCountries[index].flag,
-      latlng: ResultCountries[index].latlng,
+      flag: ResultCountries[index]?.flag,
+      latlng: ResultCountries[index]?.latlng,
     },
   }))
 }

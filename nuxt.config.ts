@@ -2,17 +2,13 @@ import process from 'node:process'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    '@unocss/nuxt',
-    '@nuxt/test-utils/module',
-    '@storybook-vue/nuxt-storybook',
-  ],
+  modules: ['@unocss/nuxt', '@nuxt/test-utils/module', '@nuxtjs/storybook'],
 
-  storybook: {
-    url: 'http://localhost:6006',
-    storybookRoute: '/__storybook__',
-    port: 6006,
-  },
+  // storybook: {
+  //   url: 'http://localhost:6006',
+  //   storybookRoute: '/__storybook__',
+  //   port: 6006,
+  // },
 
   runtimeConfig: {
     public: {
